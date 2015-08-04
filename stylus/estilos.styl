@@ -1,0 +1,42 @@
+@import "nib"
+@import "normalize.styl"
+
+.Canvas
+	//max-width 500px
+	overflow hidden
+	position relative
+	
+	&-main
+		background yellow
+		padding 10px 0
+
+	&-menu
+		background red
+		position absolute
+		width 200px
+		left -200px
+		top 0
+		transition .3s
+		&.is-active
+			left 0
+		
+	&-side
+		background orange
+		position absolute
+		width 200px
+		right -200px
+		top 0
+		transition .3s
+		&.is-active
+			right 0
+			
+.showMenu
+.hideMenu	
+	background #00CCFF
+	border-radius 10px
+	display none
+	position absolute
+	top 5px
+	right 10px
+	&.is-active
+		display block		
